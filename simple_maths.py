@@ -13,3 +13,4 @@ mulitply = num1*num2
 #Greet user and print the results
 print(f'Hi {name}, here are some fun calculations with your favourtie numbers:')
 print(f'{add} is the result of both your favourite numbers added and {mulitply} is both your favourite numbers mulitplied.')
+    
