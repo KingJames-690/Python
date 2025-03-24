@@ -9,7 +9,11 @@ quantities = []
 #Go through list of pizza options
 for toppings in pizza:
     #Ask how many of each pizza
-    howmany = input( f'How many {toppings} pizzas do we want? ')
+    howmany = int(input(f'How many {toppings} pizzas do we want? '))
     quantities.append(howmany)
 
-print(quantities)
+#Loop through all the pizzas
+for topping, quantity in zip(pizza, quantities):
+    #Check if quantity is greater than 0
+    if quantity > 0:
+        print(f'{pizza.capitalize()}: {quantity}')
